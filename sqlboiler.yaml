@@ -1,0 +1,15 @@
+schema: 'public'
+pkgname: 'model'
+output: 'internal/model'
+wipe: true
+no-tests: true
+no-hooks: true
+
+psql:
+  dbname: 's3-golang'
+  host: 'db'
+  port: '5432'
+  user: 's3-golang'
+  pass: ''
+  sslmode: 'disable'
+  blacklist: ['schema_migrations']
